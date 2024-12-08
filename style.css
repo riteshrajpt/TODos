@@ -1,0 +1,167 @@
+/* Global styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+  }
+  
+  h1 {
+    color: #333;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  
+  /* Todo List Container */
+  #todos {
+    width: 90%;
+    max-width: 600px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+  }
+  
+  #todos > div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f9f9f9;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  #todos h4 {
+    margin: 0;
+    color: #333;
+    font-size: 16px;
+  }
+  
+  button {
+    background-color: #ff5c8d;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #ff3b6b;
+  }
+  
+  /* Input and Add Button Styles */
+  div input {
+    padding: 10px;
+    font-size: 16px;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    margin-right: 10px;
+    width: 300px;
+    max-width: 100%;
+  }
+  
+  div button {
+    padding: 10px 20px;
+    background-color: #5cb85c;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  div button:hover {
+    background-color: #4cae4c;
+  }
+  
+  /* Responsive styles */
+  @media (max-width: 1024px) {
+    body {
+      padding: 20px;
+    }
+  
+    h1 {
+      font-size: 24px;
+    }
+  
+    div input {
+      width: 80%;
+      margin-bottom: 10px;
+    }
+  
+    div button {
+      width: 80%;
+      margin-top: 10px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    h1 {
+      font-size: 20px;
+      margin-bottom: 20px;
+    }
+  
+    #todos {
+      width: 90%;
+    }
+  
+    div input {
+      width: 70%;
+      font-size: 14px;
+    }
+  
+    div button {
+      width: 70%;
+      font-size: 14px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    body {
+      padding: 10px;
+    }
+  
+    h1 {
+      font-size: 18px;
+      margin-bottom: 15px;
+    }
+  
+    #todos {
+      width: 100%;
+    }
+  
+    div input {
+      width: 100%;
+      font-size: 14px;
+    }
+  
+    div button {
+      width: 100%;
+      font-size: 14px;
+    }
+  
+    #todos > div {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    button {
+      width: 100%;
+      margin-top: 10px;
+    }
+  
+    #todos h4 {
+      font-size: 14px;
+    }
+  }
+  
